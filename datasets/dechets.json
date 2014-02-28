@@ -88,6 +88,40 @@
         "id": "accumulateurs",
         "nom": "Acccumulateurs",
         "type": "Dechets toxiques"
+    },
+    {
+        "id": "electrofroid",
+        "nom": "Gros électroménager froid",
+        "type": "Dechets equipement electrique et electronique"
+    },
+    {
+        "id": "electrochaud",
+        "nom": "Gros électroménager hors froid",
+        "type": "Dechets equipement electrique et electronique"
+    },
+    {
+        "id": "ecrans",
+        "nom": "Écran",
+        "type": "Dechets equipement electrique et electronique"
+    },
+    {
+        "id": "petitsappareils",
+        "nom": "Petits appareils en mélange",
+        "type": "Dechets equipement electrique et electronique"
+    },
+    {
+        "id": "lampesadecharge",
+        "nom": "Lampes à décharge (éclairage public)",
+        "type": "Dechets equipement electrique et electronique"
+    },
+    {
+        "id": "neons",
+        "nom": "Tubes fluorescents (dits « néons »)",
+        "type": "Dechets equipement electrique et electronique particulier"
+    },
+    {
+        "id": "lampesbasseconso",
+        "nom": "Lampes à basse consommation",
+        "type": "Dechets equipement electrique et electronique particulier"
     }
-
 ]
