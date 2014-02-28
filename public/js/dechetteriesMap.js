@@ -18,7 +18,7 @@ var createPosition = function(longitude, latitude) {
 }
 
 
-var geolocate = function(map) {
+var geolocate = function(markers, map) {
     var geolocate = new OpenLayers.Control.Geolocate({
         bind: false,
         geolocationOptions: {
@@ -33,11 +33,22 @@ var geolocate = function(map) {
         var geolocatePosition = createPosition(coords.longitude, coords.latitude);
         map.setCenter(geolocatePosition, 12);
         var icon = new OpenLayers.Icon("/img/home-orange.png", size, offset);
-        markers.addMarker(new OpenLayers.Marker(geolocatePosition, icon))
+        markers.addMarker(new OpenLayers.Marker(geolocatePosition, icon));
     });
     geolocate.activate();
     geolocate.getCurrentLocation();
 }
+
+var drawMarkers = function (inputMarkers, markers) {
+        for (var i = inputMarkers.length - 1; i >= 0; i--) {
+            var dechetteriePosition = inputMarkers[i].position;
+            var latitude = dechetteriePosition.latitude;
+            var longitude = dechetteriePosition.longitude;
+            var currentPosition = createPosition(longitude, latitude);
+            var icon = new OpenLayers.Icon("/img/flag-orange.png", size, offset);
+            markers.addMarker(new OpenLayers.Marker(currentPosition, icon))
+        }
+    }
 
 var displayMap = function(dechetteries) {
 
@@ -47,21 +58,8 @@ var displayMap = function(dechetteries) {
     var position = createPosition(6.1734, 48.6881); //48.6881/6.1734
     var markers = new OpenLayers.Layer.Markers("Markers");
     map.addLayer(markers);
-
-
-
-    for (var i = dechetteries.length - 1; i >= 0; i--) {
-        var dechetteriePosition = dechetteries[i].position;
-        var latitude = dechetteriePosition.latitude;
-        var longitude = dechetteriePosition.longitude;
-        var currentPosition = createPosition(longitude, latitude);
-        var icon = new OpenLayers.Icon('/img/flag-orange.png', size, offset);
-        markers.addMarker(new OpenLayers.Marker(currentPosition, icon));
-    };
-
-
-    geolocate(map);
-
+    drawMarkers(dechetteries, markers);
+    geolocate(markers, map);
 };
 
 $("#dechetteriesMap").ready(function() {
