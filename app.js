@@ -143,7 +143,7 @@ app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, 
 
 /**
  *  Routes locales
- * 
+ *
  */
 app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
 app.get('/opendata/', odController.getOpenDataList);
