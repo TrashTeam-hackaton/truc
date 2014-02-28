@@ -132,6 +132,7 @@ app.get('/api/github', passportConf.isAuthenticated, passportConf.isAuthorized, 
 app.get('/api/twitter', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getTwitter);
 app.get('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getVenmo);
 app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.postVenmo);
+app.get('/api/opendata/:dataid', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getOpenData);
 
 /**
  * OAuth routes for sign-in.

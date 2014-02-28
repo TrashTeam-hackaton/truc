@@ -482,3 +482,12 @@ exports.postVenmo = function(req, res, next) {
     res.redirect('/api/venmo');
   });
 };
+
+
+/**
+ * GET /api/datasets
+ */
+exports.getOpenData = function(req, res, next) {
+  // TODO ...
+  console.log(req.params.dataid);
+};
