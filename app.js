@@ -166,7 +166,6 @@ app.get('/auth/venmo/callback', passport.authorize('venmo', { failureRedirect: '
 /**
  * Start Express server.
  */
-console.log("Plop");
 app.listen(app.get('port'), function() {
   console.log("✔ Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
 });
