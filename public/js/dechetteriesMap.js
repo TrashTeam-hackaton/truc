@@ -19,7 +19,10 @@ var createPosition = function(longitude, latitude) {
 
 
 var geolocate = function(map) {
-    map.locate({setView : true});
+    map.locate({setView : true}).on('locationfound', function(){
+		// Si la geolocasition n'a pas marchée
+		map.setView(new L.LatLng(48.6833, 6.2), 12);
+	});
 }
 
 var getDechetterieDescription = function(dechetterie){
@@ -79,7 +82,7 @@ var displayMap = function(dechetteries) {
     });
 
     var map = L.map('dechetteriesMap');
-    map.setView(new L.LatLng(48.6881, 5), 12);
+    map.setView(new L.LatLng(48.6833, 6.2), 12);
     map.addLayer(osm);
     drawMarkers(dechetteries, map);
     geolocate(map);
