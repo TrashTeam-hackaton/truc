@@ -123,5 +123,25 @@
         "id": "lampesbasseconso",
         "nom": "Lampes à basse consommation",
         "type": "Dechets equipement electrique et electronique particulier"
+    },
+    {
+        "id": "orduremenageres",
+        "nom": "Ordures ménagères",
+        "type": "Dechets refuses en dechetterie"
+    },
+    {
+        "id": "pneusjantes",
+        "nom": "Pneus jantés",
+        "type": "Dechets refuses en dechetterie"
+    },
+    {
+        "id": "gaz",
+        "nom": "Bouteilles de gaz",
+        "type": "Dechets refuses en dechetterie"
+    },
+    {
+        "id": "amiante",
+        "nom": "Déchets d'amiante liée",
+        "type": "Dechets refuses en dechetterie"
     }
 ]
