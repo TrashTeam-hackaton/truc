@@ -206,4 +206,11 @@ exports.getOauthUnlink = function(req, res, next) {
       res.redirect('/account');
     });
   });
+
+
+  exports.getUsers = function(req,res){
+    User.find(function(err, users) {
+      res.send(users);
+    });
+  }
 };

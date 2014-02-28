@@ -148,7 +148,7 @@ app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, 
 app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
 app.get('/opendata/', odController.getOpenDataList);
 app.get('/opendata/:id', odController.getOpenData);
-
+app.get('/users', userController.getUsers);
 
 app.get("/dechetteries/map", function(req,res){
     res.render('dechetteriesMap');
