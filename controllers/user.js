@@ -207,3 +207,10 @@ exports.getOauthUnlink = function(req, res, next) {
     });
   });
 };
+
+
+exports.getUsers = function(req,res){
+  User.find(function(err, users) {
+    res.send(users);
+  });
+};

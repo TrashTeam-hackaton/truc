@@ -3,9 +3,9 @@ extends layout
 block content
   div.dechets
     h1 Quel déchet souhaitez-vous jeter ?
-    select       
+    select
       for cat in cats
         option(value=cat.id) #{cat.nom}
-      
+
   div.dechets
     include dechetteriesMap
