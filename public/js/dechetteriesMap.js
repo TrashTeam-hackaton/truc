@@ -19,23 +19,25 @@ var createPosition = function(longitude, latitude) {
 
 
 var geolocate = function(map) {
-    map.locate({setView : true}).on('locationfound', function(){
-		// Si la geolocasition n'a pas marchée
-		map.setView(new L.LatLng(48.6833, 6.2), 12);
-	});
+    map.locate({
+        setView: true
+    }).on('locationfound', function() {
+        // Si la geolocasition n'a pas marchée
+        map.setView(new L.LatLng(48.6833, 6.2), 12);
+    });
 }
 
-var getDechetterieDescription = function(dechetterie){
+var getDechetterieDescription = function(dechetterie) {
     var description = "<p>";
-    description += "<h4>Déchetterie de " + dechetterie.ville +"</h4>";
+    description += "<h4>Déchetterie de " + dechetterie.ville + "</h4>";
     var horaire = dechetterie.horaires[0];
-    description += ("Lundi : " + horaire["lundi"].join("-")+"</br>");
-    description += ("Mardi : " + horaire["mardi"].join("-")+"</br>");
-    description += ("Mercredi : " + horaire["mercredi"].join("-")+"</br>");
-    description += ("Jeudi : " + horaire["jeudi"].join("-")+"</br>");
-    description += ("Vendredi : " + horaire["vendredi"].join("-")+"</br>");
-    description += ("Samedi : " + horaire["samedi"].join("-")+"</br>");
-    description += ("Dimanche : " + horaire["dimanche"].join("-")+"</br>");
+    description += ("Lundi : " + horaire["lundi"].join("-") + "</br>");
+    description += ("Mardi : " + horaire["mardi"].join("-") + "</br>");
+    description += ("Mercredi : " + horaire["mercredi"].join("-") + "</br>");
+    description += ("Jeudi : " + horaire["jeudi"].join("-") + "</br>");
+    description += ("Vendredi : " + horaire["vendredi"].join("-") + "</br>");
+    description += ("Samedi : " + horaire["samedi"].join("-") + "</br>");
+    description += ("Dimanche : " + horaire["dimanche"].join("-") + "</br>");
     description += "</p>"
     return description;
 }
@@ -51,23 +53,29 @@ var drawMarkers = function(inputMarkers, map) {
             riseOnHover: true
         }
         var marker = L.marker([latitude, longitude], markerConf).addTo(map);
-        marker.on('click',function(e){
+        marker.on('click', function(e) {
             var popup = L.popup()
-            .setLatLng(e.latlng) //(assuming e.latlng returns the coordinates of the event)
+                .setLatLng(e.latlng) //(assuming e.latlng returns the coordinates of the event)
             .setContent(getDechetterieDescription(dechetterie))
-            .openOn(map);
+                .openOn(map);
         });
     }
 }
 
-var drawUsers = function(markers) {
+var drawUsers = function(map) {
     $.get("/users", function(data) {
         for (var i = data.length - 1; i >= 0; i--) {
             var user = data[i];
             var userCoords = user.profile.location.split(',');
-            var userIcon = new OpenLayers.Icon("/img/male-user-orange.png", size, offset);
-            var userPosition = createPosition(userCoords[0], userCoords[1]);
-            markers.addMarker(new OpenLayers.Marker(userPosition, userIcon))
+
+            var userIcon = L.icon({
+                iconUrl: "/img/male-user-orange.png"
+            });
+            var markerConf = {
+                icon: userIcon,
+                title: user.profile.name
+            }
+            var marker = L.marker([userCoords[1], userCoords[0]], markerConf).addTo(map);
         };
     });
 }
@@ -86,15 +94,7 @@ var displayMap = function(dechetteries) {
     map.addLayer(osm);
     drawMarkers(dechetteries, map);
     geolocate(map);
-    // $.get("/users", function(data){
-    //     for (var i = data.length - 1; i >= 0; i--) {
-    //         var user = data[i];
-    //         var userCoords = user.profile.location.split(',');
-    //         var userIcon = new OpenLayers.Icon("/img/male-user-orange.png", size, offset);
-    //         var userPosition = createPosition(userCoords[0], userCoords[1]);
-    //         markers.addMarker(new OpenLayers.Marker(userPosition, userIcon))
-    //     };
-    // });
+    drawUsers(map);
 };
 
 $("#dechetteriesMap").ready(function() {
