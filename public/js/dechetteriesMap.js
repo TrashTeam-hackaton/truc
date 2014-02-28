@@ -43,8 +43,7 @@ var getDechetterieDescription = function(dechetterie) {
 }
 
 var drawMarkers = function(inputMarkers, map) {
-    for (var i = inputMarkers.length - 1; i >= 0; i--) {
-        var dechetterie = inputMarkers[i];
+    $.each(inputMarkers, function(index, dechetterie) {
         var dechetteriePosition = dechetterie.position;
         var latitude = dechetteriePosition.latitude;
         var longitude = dechetteriePosition.longitude;
@@ -59,7 +58,7 @@ var drawMarkers = function(inputMarkers, map) {
             .setContent(getDechetterieDescription(dechetterie))
                 .openOn(map);
         });
-    }
+    });
 }
 
 var drawUsers = function(map) {
