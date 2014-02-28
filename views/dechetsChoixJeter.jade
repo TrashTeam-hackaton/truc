@@ -2,7 +2,7 @@ extends layout
 
 block content
   div.dechets
-    h1 Quels déchet souhaitez-vous jeter ?
+    h1 Quel déchet souhaitez-vous jeter ?
     select       
       for cat in cats
         option(value=cat.id) #{cat.nom}
