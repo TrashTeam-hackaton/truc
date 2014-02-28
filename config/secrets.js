@@ -31,8 +31,8 @@ module.exports = {
 
   facebookAuth: true,
   facebook: {
-    clientID: 'Your App ID',
-    clientSecret: 'Your App Secret',
+    clientID: '596026050480545',
+    clientSecret: '7b8d834e9a8a6bd19d4158c59a1aaa3f',
     callbackURL: '/auth/facebook/callback',
     passReqToCallback: true
   },
@@ -47,8 +47,8 @@ module.exports = {
 
   twitterAuth: true,
   twitter: {
-    consumerKey: 'Your Consumer Key',
-    consumerSecret: 'Your Consumer Secret',
+    consumerKey: 'MBq17Fuoa7J00RgtJQ0hPA',
+    consumerSecret: 'G5lkVNyFLUAuKDslCS2AlWNEXUd1GovKnm9k0QofZk',
     callbackURL: '/auth/twitter/callback',
     passReqToCallback: true
   },

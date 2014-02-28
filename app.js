@@ -149,6 +149,11 @@ app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
 app.get('/opendata/', odController.getOpenDataList);
 app.get('/opendata/:id', odController.getOpenData);
 
+
+app.get("/dechetteries/map", function(req,res){
+    res.render('dechetteriesMap');
+});
+
 /**
  * OAuth routes for sign-in.
  */
@@ -179,14 +184,6 @@ app.get('/auth/venmo/callback', passport.authorize('venmo', { failureRedirect: '
   res.redirect('/api/venmo');
 });
 
-
-/**
- * Truc routes
- */
-
-app.get("/dechetteries/map", function(req,res){
-    res.render('dechetteriesMap');
-});
 /**
  * Start Express server.
  */
