@@ -36,7 +36,7 @@ var displayMap = function(dechetteries){
     geolocate.events.register("locationupdated",geolocate,function(e) {
         var coords = e.position.coords;
         var geolocatePosition = createPosition(coords.longitude,coords.latitude);
-        map.setCenter(geolocatePosition, 15);
+        map.setCenter(geolocatePosition, 12);
         markers.addMarker(new OpenLayers.Marker(geolocatePosition));
     });
 
