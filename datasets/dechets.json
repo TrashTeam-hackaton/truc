@@ -53,5 +53,41 @@
         "id": "friture",
         "nom": "Huiles de friture",
         "type": "Dechets non dangereux"
+    },
+    {
+        "id": "emballages",
+        "nom": "Emballages et bidons souillés",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "jardinage",
+        "nom": "Produits de jardinage et d'entretien",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "peinture",
+        "nom": "Restes de peinture",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "solvants",
+        "nom": "Solvants",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "vernis",
+        "nom": "Emballages et bidons souillés",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "piles",
+        "nom": "Piles",
+        "type": "Dechets toxiques"
+    },
+    {
+        "id": "accumulateurs",
+        "nom": "Acccumulateurs",
+        "type": "Dechets toxiques"
     }
+
 ]
