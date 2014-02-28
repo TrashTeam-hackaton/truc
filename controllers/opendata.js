@@ -15,6 +15,8 @@ exports.getOpenData = function(req, res) {
       res.send(500, err);
       return;
     }
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.json(json);
   } else {
     res.send(404);
