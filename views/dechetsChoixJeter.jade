@@ -15,18 +15,15 @@ html
       .container
         include partials/flash
         block content
-          h1 Quels déchêt souhaitez-vous jeter ?
+          h1 Quels déchet souhaitez-vous jeter ?
           h2 Choisissez la catégorie
-          select
-            option(value=bois) Bois
-            option(value=metal) Métal
-            option(value=deee) Électronique & Électro-ménager
-            option(value=informatique) Informatique
-            option(value=divers) Divers
+          select       
+            for cat in cats
+              option(value=cat.id) #{cat.nom}
+          
+          // h2 Dans cette catégorie, quel est votre déchet ?
+          // select
+          //  option(value=type) Nom du déchet
+          
             
-            // each dechet, d in dechets
-              // option(value=d) Déchet #{dechet}
-          h2 Dans cette catégorie, quel est votre déchêt ?
-          select
-            option(value=type) Nom du déchêt
     include partials/footer
