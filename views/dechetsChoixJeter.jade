@@ -1,11 +1,15 @@
 extends layout
 
+
+
 block content
   div.dechets
     h1 Quel déchet souhaitez-vous jeter ?
-    select
+    select#type
       for cat in cats
         option(value=cat.id) #{cat.nom}
+  
+  
+  include dechetteriesMap
 
-  div.dechets
-    include dechetteriesMap
+  script(src="/js/typedechet.js")

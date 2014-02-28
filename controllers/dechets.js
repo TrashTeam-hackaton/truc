@@ -10,3 +10,4 @@ exports.dechetsChoixJeter = function(req, res) {
     cats: categories
   });
 };
+
