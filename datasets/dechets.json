@@ -1,0 +1,57 @@
+[
+    {
+        "id": "gravats",
+        "nom": "Gravats",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "ferrailles",
+        "nom": "Ferrailles",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "bois",
+        "nom": "Bois",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "vegetaux",
+        "nom": "Végétaux",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "cartons",
+        "nom": "Cartons",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "encombrants",
+        "nom": "Encombrants",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "bouchons",
+        "nom": "Bouchons en plastique",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "polystyrene",
+        "nom": "Polystyrène",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "baches",
+        "nom": "Bâches et films plastiques",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "pneus",
+        "nom": "Pneus",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "friture",
+        "nom": "Huiles de friture",
+        "type": "Dechets non dangereux"
+    }
+]
