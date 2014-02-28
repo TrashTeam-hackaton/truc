@@ -55,8 +55,8 @@ module.exports = {
 
   googleAuth: true,
   google: {
-    clientID: 'Your Client ID',
-    clientSecret: 'Your Client Secret',
+    clientID: '875444853115-3p0i3a9tpv8osr6hstqumsucftdb0bjn.apps.googleusercontent.com',
+    clientSecret: 'Hvg4t7TR9HvUt6to-Vb3e7il',
     callbackURL: '/auth/google/callback',
     passReqToCallback: true
   },
