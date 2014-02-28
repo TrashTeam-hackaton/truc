@@ -140,6 +140,11 @@
         "type": "Dechets refuses en dechetterie"
     },
     {
+        "id": "extincteur",
+        "nom": "Extincteur",
+        "type": "Dechets refuses en dechetterie"
+    },
+    {
         "id": "amiante",
         "nom": "Déchets d'amiante liée",
         "type": "Dechets refuses en dechetterie"
