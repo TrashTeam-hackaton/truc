@@ -97,6 +97,5 @@ var displayMap = function(dechetteries) {
 };
 
 $("#dechetteriesMap").ready(function() {
-    displayMap([]);
-    // $.get("/opendata/dechetteries_cugn.json", displayMap);
+    $.get("/opendata/dechetteries_cugn.json", displayMap);
 });
