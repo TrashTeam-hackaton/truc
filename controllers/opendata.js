@@ -22,3 +22,23 @@ exports.getOpenData = function(req, res) {
   }
 
 };
+
+/**
+ * Liste des datasets d'opendata
+ */
+var glob = require("glob");
+
+exports.getOpenDataList = function(req, res) {
+  var datasetsPath = __dirname + '/../datasets/';
+  glob(datasetsPath + "/*.json", {}, function (err, files) {
+    if (err) return res.send(500, err);
+    
+    files = files.map(function (elt) {
+      return '/opendata/' + elt.split('/').pop();
+    });
+
+
+
+    res.json(files);
+  });
+};
