@@ -37,7 +37,7 @@ var displayMap = function(dechetteries){
         var coords = e.position.coords;
         var geolocatePosition = createPosition(coords.longitude,coords.latitude);
         map.setCenter(geolocatePosition, 15);
-        markers.addMarker(new OpenLayers.Marker(geolocatePosition));
+        markers.addMarker(new OpenLayers.Marker(geolocatePosition), );
     });
 
     for (var i = dechetteries.length - 1; i >= 0; i--) {       
@@ -52,5 +52,5 @@ var displayMap = function(dechetteries){
 };
 
 $("#dechetteriesMap").ready(function(){
-    $.get("http://localhost:3000/opendata/dechetteries_cugn.json", displayMap);
+    $.get("/opendata/dechetteries_cugn.json", displayMap);
 });
