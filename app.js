@@ -102,7 +102,10 @@ app.use(express.errorHandler());
  * Application routes.
  */
 
-app.get('/', homeController.index);
+// app.get('/', homeController.index);
+// Le home devient le choix de déchetterie
+app.get('/', dechetsController.dechetsChoixJeter);
+//
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
