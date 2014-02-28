@@ -18,25 +18,8 @@ var createPosition = function(longitude, latitude) {
 }
 
 
-var geolocate = function(markers, map) {
-    var geolocate = new OpenLayers.Control.Geolocate({
-        bind: false,
-        geolocationOptions: {
-            enableHighAccuracy: false,
-            maximumAge: 0,
-            timeout: 7000
-        }
-    });
-    map.addControl(geolocate);
-    geolocate.events.register("locationupdated", geolocate, function(e) {
-        var coords = e.position.coords;
-        var geolocatePosition = createPosition(coords.longitude, coords.latitude);
-        map.setCenter(geolocatePosition, 12);
-        var icon = new OpenLayers.Icon("/img/home-red.png", size, offset);
-        markers.addMarker(new OpenLayers.Marker(geolocatePosition, icon));
-    });
-    geolocate.activate();
-    geolocate.getCurrentLocation();
+var geolocate = function(map) {
+    map.locate({setView : true});
 }
 
 var getDechetterieDescription = function(dechetterie){
@@ -55,16 +38,12 @@ var getDechetterieDescription = function(dechetterie){
 }
 
 var drawMarkers = function(inputMarkers, map) {
-    var flagIcon = L.icon({
-        iconUrl: '/img/flag-red.png'
-    });
     for (var i = inputMarkers.length - 1; i >= 0; i--) {
         var dechetterie = inputMarkers[i];
         var dechetteriePosition = dechetterie.position;
         var latitude = dechetteriePosition.latitude;
         var longitude = dechetteriePosition.longitude;
         var markerConf = {
-            icon: flagIcon,
             title: "Déchetterie de " + dechetterie.ville,
             riseOnHover: true
         }
@@ -100,16 +79,10 @@ var displayMap = function(dechetteries) {
     });
 
     var map = L.map('dechetteriesMap');
-    map.setView(new L.LatLng(48.6881, 6.1734), 12);
+    map.setView(new L.LatLng(48.6881, 5), 12);
     map.addLayer(osm);
-    // var map = new OpenLayers.Map("dechetteriesMap");
-    // var mapnik = new OpenLayers.Layer.OSM();
-    // map.addLayer(mapnik);
-    // var position = createPosition(6.1734, 48.6881); //48.6881/6.1734
-    // var markers = new OpenLayers.Layer.Markers("Markers");
-    // map.addLayer(markers);
     drawMarkers(dechetteries, map);
-    // geolocate(markers, map);
+    geolocate(map);
     // $.get("/users", function(data){
     //     for (var i = data.length - 1; i >= 0; i--) {
     //         var user = data[i];
