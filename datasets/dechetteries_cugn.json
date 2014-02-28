@@ -128,8 +128,8 @@
     "ville":"Laneuveville-devant-Nancy",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.647441",
+      "longitude":"6.242267"
     },
     "horaires":
     [
@@ -169,8 +169,8 @@
     "ville":"Ludres",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.610272",
+      "longitude":"6.174295"
     },
     "horaires":
     [
@@ -210,8 +210,8 @@
     "ville":"Malzéville",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.724112",
+      "longitude":"6.190312"
     },
     "horaires":
     [
@@ -251,8 +251,8 @@
     "ville":"Maxéville",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.712999",
+      "longitude":"6.147046"
     },
     "horaires":
     [
@@ -292,8 +292,8 @@
     "ville":"Vandoeuvre-lès-Nancy",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.651128",
+      "longitude":"6.176254"
     },
     "horaires":
     [
@@ -331,6 +331,11 @@
     "id":"NCY",
     "voie":"Rue de Crévic",
     "ville":"Nancy",
+    "position":
+    {
+      "latitude":"48.678229",
+      "longitude":"6.20788"
+    },
     "horaires":[{
       "lundi":["7:30","19:30"],
       "mardi":["7:30","19:30"],
