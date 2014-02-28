@@ -22,6 +22,10 @@ var contactController = require('./controllers/contact');
 var forgotController = require('./controllers/forgot');
 var resetController = require('./controllers/reset');
 
+// Contrôleurs TrashTeam/truc
+var dechetsController = require('./controllers/dechets');
+
+
 /**
  * API keys + Passport configuration.
  */
@@ -132,7 +136,13 @@ app.get('/api/github', passportConf.isAuthenticated, passportConf.isAuthorized, 
 app.get('/api/twitter', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getTwitter);
 app.get('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getVenmo);
 app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.postVenmo);
-app.get('/api/opendata/:dataid', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getOpenData);
+
+
+/**
+ *  Routes locales
+ * 
+ */
+app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
 
 /**
  * OAuth routes for sign-in.
@@ -167,6 +177,7 @@ app.get('/auth/venmo/callback', passport.authorize('venmo', { failureRedirect: '
 /**
  * Start Express server.
  */
+console.log("Plop");
 app.listen(app.get('port'), function() {
   console.log("✔ Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
 });
