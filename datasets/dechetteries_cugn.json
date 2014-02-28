@@ -8,6 +8,36 @@
       "latitude":"48.670368",
       "longitude":"6.246709"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -49,6 +79,36 @@
       "latitude":"48.71192",
       "longitude":"6.239031"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -90,6 +150,36 @@
       "latitude":"48.648071",
       "longitude":"6.209185"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -131,6 +221,36 @@
       "latitude":"48.647441",
       "longitude":"6.242267"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -172,6 +292,36 @@
       "latitude":"48.610272",
       "longitude":"6.174295"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -213,6 +363,36 @@
       "latitude":"48.724112",
       "longitude":"6.190312"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -254,6 +434,36 @@
       "latitude":"48.712999",
       "longitude":"6.147046"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -295,6 +505,36 @@
       "latitude":"48.651128",
       "longitude":"6.176254"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":
     [
       {
@@ -336,6 +576,36 @@
       "latitude":"48.678229",
       "longitude":"6.20788"
     },
+    "allowed":
+    [
+      "gravats",
+      "ferrailles",
+      "bois",
+      "vegetaux",
+      "cartons",
+      "encombrants",
+      "bouchons",
+      "polystyrene",
+      "baches",
+      "pneus",
+      "friture",
+      "emballages",
+      "jardinage",
+      "peinture",
+      "solvants",
+      "vernis",
+      "piles",
+      "accumulateurs",
+      "electrofroid",
+      "electrochaud",
+      "ecrans",
+      "petitsappareils",
+      "lampesadecharge",
+      "neons",
+      "lampesbasseconso",
+      "papiers",
+      "verres"
+    ],
     "horaires":[{
       "lundi":["7:30","19:30"],
       "mardi":["7:30","19:30"],
