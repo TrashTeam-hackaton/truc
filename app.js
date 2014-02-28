@@ -115,6 +115,7 @@ app.get('/reset/:token', resetController.getReset);
 app.post('/reset/:token', resetController.postReset);
 app.get('/signup', userController.getSignup);
 app.post('/signup', userController.postSignup);
+app.get('/users', userController.getUsers);
 app.get('/contact', contactController.getContact);
 app.post('/contact', contactController.postContact);
 app.get('/account', passportConf.isAuthenticated, userController.getAccount);
@@ -148,7 +149,6 @@ app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, 
 app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
 app.get('/opendata/', odController.getOpenDataList);
 app.get('/opendata/:id', odController.getOpenData);
-
 
 app.get("/dechetteries/map", function(req,res){
     res.render('dechetteriesMap');

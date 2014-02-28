@@ -6,6 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
+var size = new OpenLayers.Size(30,30);
+var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
+
 var createPosition = function(longitude,latitude){
     return new OpenLayers.LonLat(longitude, latitude) // Centre de la carte
         .transform(
@@ -37,7 +40,8 @@ var displayMap = function(dechetteries){
         var coords = e.position.coords;
         var geolocatePosition = createPosition(coords.longitude,coords.latitude);
         map.setCenter(geolocatePosition, 12);
-        markers.addMarker(new OpenLayers.Marker(geolocatePosition));
+        var icon = new OpenLayers.Icon('/img/home-orange.png', size, offset);
+        markers.addMarker(new OpenLayers.Marker(geolocatePosition,icon));
     });
 
     for (var i = dechetteries.length - 1; i >= 0; i--) {       
@@ -45,7 +49,8 @@ var displayMap = function(dechetteries){
         var latitude = dechetteriePosition.latitude;
         var longitude = dechetteriePosition.longitude;
         var currentPosition = createPosition(longitude,latitude);
-        markers.addMarker(new OpenLayers.Marker(currentPosition));
+        var icon = new OpenLayers.Icon('/img/flag-orange.png', size, offset);
+        markers.addMarker(new OpenLayers.Marker(currentPosition,icon));
     };
     geolocate.activate();
     geolocate.getCurrentLocation();
