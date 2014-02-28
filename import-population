@@ -1,0 +1,67 @@
+#!/bin/bash
+
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+POSITION="48.693439,6.182029"
+NAME="Chuck Norris"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+POSITION="48.620711,6.17602"
+NAME="Keanu Reeves"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+NAME="Loboc"
+POSITION="48.665290,6.197459"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+NAME="Biode"
+POSITION="48.679573,6.143214"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+NAME="Niobon"
+POSITION="48.705636,6.214282"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+NAME="Bromas"
+POSITION="48.694759,6.130855"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+NAME="Terebas"
+POSITION="48.683427,6.173770"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
+
+
+NAME="Perrimion"
+POSITION="48.657127,6.221148"
+MYHASH=`cat /dev/urandom |  tr -cd 'a-f0-9' | head -c 32  | md5sum | cut -f 1 -d " "`
+PICTURE="https://gravatar.com/avatar/$MYHASH?s=32&d=retro"
+MAIL="`echo $NAME | sed -e 's#[^a-z]#.#ig'`@trashteam.net"
+
+echo "db.users.save({ \"email\" : \"$MAIL\", \"password\" : \"$2a$05$vDFY9yXnPdOnKJlZKK2FEuEMvSql0E3zj/Swj0yh4.r8NEb2/9HnK\", \"profile\" : { \"gender\" : \"male\", \"location\" : \"$POSITION\", \"name\" : \"$NAME\", \"picture\" : \"$PICTURE\", \"website\" : \"\" }, \"tokens\" : [ ] });" | mongo test
