@@ -40,7 +40,7 @@ var displayMap = function(dechetteries){
         var coords = e.position.coords;
         var geolocatePosition = createPosition(coords.longitude,coords.latitude);
         map.setCenter(geolocatePosition, 12);
-        var icon = new OpenLayers.Icon('/img/happy-face-orange.png', size, offset);
+        var icon = new OpenLayers.Icon('/img/home-orange.png', size, offset);
         markers.addMarker(new OpenLayers.Marker(geolocatePosition,icon));
     });
 
@@ -49,7 +49,7 @@ var displayMap = function(dechetteries){
         var latitude = dechetteriePosition.latitude;
         var longitude = dechetteriePosition.longitude;
         var currentPosition = createPosition(longitude,latitude);
-        var icon = new OpenLayers.Icon('/img/tag-orange.png', size, offset);
+        var icon = new OpenLayers.Icon('/img/flag-orange.png', size, offset);
         markers.addMarker(new OpenLayers.Marker(currentPosition,icon));
     };
     geolocate.activate();
