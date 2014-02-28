@@ -1,29 +1,11 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='')
-    meta(name='author', content='TrashTeam')
-    title #{title} - Starter Template for Bootstrap
-    != css('styles')
-    != js('application')
-  body
-    #wrap
-      include partials/navigation
-      .container
-        include partials/flash
-        block content
-          h1 Quels déchet souhaitez-vous jeter ?
-          h2 Choisissez la catégorie
-          select       
-            for cat in cats
-              option(value=cat.id) #{cat.nom}
-          
-          // h2 Dans cette catégorie, quel est votre déchet ?
-          // select
-          //  option(value=type) Nom du déchet
-          
-            
-    include partials/footer
+extends layout
+
+block content
+  div.dechets
+    h1 Quels déchet souhaitez-vous jeter ?
+    select       
+      for cat in cats
+        option(value=cat.id) #{cat.nom}
+      
+  div.dechets
+    include dechetteriesMap
