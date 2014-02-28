@@ -1,46 +1,11 @@
-{
-  "id":"categorisation des dechets",
+[
+  "Dechets non dangereux",
 
-  "Dechets non dangereux":
-  [
-    {
-      "xxxxx":{
-                },
-    },
+  "Dechets toxiques",
 
-  ],
+  "Dechets equipement electrique et electronique",
 
-  "Dechets toxiques":
-  [
-    {
-      "xxxxx":{
-                },
-    },
-  ],
+  "Dechets equipement electrique et electronique particulier",
 
-  "Dechets equipement electrique et electronique":
-  [
-    {
-      "xxxxx":{
-                },
-    },
-  ],
-
-  "Dechets equipement electrique et electronique particulier":
-  [
-    {
-      "xxxxx":{
-                },
-    },
-  ],
-
-  "Dechets refuses en dechetterie":
-  [
-    {
-      "xxxxx":{
-                },
-    },
-  ]
-
-
-}
+  "Dechets refuses en dechetterie"
+]
