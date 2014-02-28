@@ -5,8 +5,8 @@
     "ville":"Art-sur-Meurthe",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.670368",
+      "longitude":"6.246709"
     },
     "horaires":
     [
@@ -46,8 +46,8 @@
     "ville":"Essey-lès-Nancy",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.71192",
+      "longitude":"6.239031"
     },
     "horaires":
     [
@@ -87,8 +87,8 @@
     "ville":"Heillecourt",
     "position":
     {
-      "latitude":"",
-      "longitude":""
+      "latitude":"48.648071",
+      "longitude":"6.209185"
     },
     "horaires":
     [

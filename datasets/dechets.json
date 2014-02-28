@@ -143,5 +143,15 @@
         "id": "amiante",
         "nom": "Déchets d'amiante liée",
         "type": "Dechets refuses en dechetterie"
+    },
+    {
+        "id": "papiers",
+        "nom": "Papiers non souillés",
+        "type": "Dechets non dangereux"
+    },
+    {
+        "id": "verres",
+        "nom": "Verres",
+        "type": "Dechets non dangereux"
     }
 ]

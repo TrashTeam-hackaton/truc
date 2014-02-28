@@ -15,15 +15,16 @@ var connectAssets = require('connect-assets');
  * Load controllers.
  */
 
-var homeController = require('./controllers/home');
-var userController = require('./controllers/user');
-var apiController = require('./controllers/api');
+var homeController    = require('./controllers/home');
+var userController    = require('./controllers/user');
+var apiController     = require('./controllers/api');
 var contactController = require('./controllers/contact');
-var forgotController = require('./controllers/forgot');
-var resetController = require('./controllers/reset');
+var forgotController  = require('./controllers/forgot');
+var resetController   = require('./controllers/reset');
 
 // Contrôleurs TrashTeam/truc
 var dechetsController = require('./controllers/dechets');
+var odController      = require('./controllers/opendata');
 
 
 /**
@@ -137,12 +138,13 @@ app.get('/api/twitter', passportConf.isAuthenticated, passportConf.isAuthorized,
 app.get('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getVenmo);
 app.post('/api/venmo', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.postVenmo);
 
-
 /**
  *  Routes locales
  * 
  */
 app.get('/dechetsChoixJeter', dechetsController.dechetsChoixJeter);
+app.get('/opendata/', odController.getOpenDataList);
+app.get('/opendata/:id', odController.getOpenData);
 
 /**
  * OAuth routes for sign-in.
