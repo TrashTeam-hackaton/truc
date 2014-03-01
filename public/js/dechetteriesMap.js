@@ -10,7 +10,7 @@ var size = new OpenLayers.Size(30, 30);
 var offset = new OpenLayers.Pixel(-(size.w / 2), -size.h);
 var dechetMarkers = new L.LayerGroup();
 var usersMarkers = new L.LayerGroup();
-var map = L.map('dechetteriesMap');
+var map;
 
 var createPosition = function(longitude, latitude) {
     return new OpenLayers.LonLat(longitude, latitude) // Centre de la carte
@@ -45,7 +45,7 @@ var getDechetterieDescription = function(dechetterie) {
 }
 
 var drawMarkers = function(inputMarkers) {
-
+    dechetMarkers.clearLayers();
     $.each(inputMarkers, function(index, dechetterie) {
         var dechetteriePosition = dechetterie.position;
         var latitude = dechetteriePosition.latitude;
@@ -86,8 +86,8 @@ var drawUsers = function() {
         usersMarkers.addTo(map);
     });
 }
-var displayMap = function(dechetteries) {
-
+var initMap = function(){
+    map = L.map('dechetteriesMap');
     var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib = 'Map data © OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {
@@ -97,10 +97,15 @@ var displayMap = function(dechetteries) {
     });
     map.setView(new L.LatLng(48.6833, 6.2), 12);
     map.addLayer(osm);
-    drawMarkers(dechetteries, map);
-    geolocate(map);
-    drawUsers(map);
-    
+}
+
+var displayMap = function(dechetteries) {
+    if (map === undefined){
+        initMap();
+    }
+    drawMarkers(dechetteries);
+    geolocate();
+    drawUsers();
 };
 
 $("#dechetteriesMap").ready(function() {
