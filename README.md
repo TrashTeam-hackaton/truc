@@ -5,6 +5,17 @@ Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déro
 - [Slides de la présentation du TRUC](https://docs.google.com/presentation/d/1ZJRNnDdomIa8d21q9zgd5B0WSo0M2fVteHkuviSbsBs/pub?start=false&loop=false&delayms=3000)
 - [Démonstration en ligne de la maquette TRUC](http://truc.extramuros.com:3000/)
 
+## TrashTeam
+
+- [Pierre-Yves Arnould](https://github.com/bricoman)
+- [Guillaume Billey](https://github.com/guilbill)
+- [Stéphane Gully](https://github.com/kerphi)
+- [François Parmentier](https://github.com/parmentf)
+- [William Paul](https://github.com/laryakan)
+- [Stanislas Perrin](https://github.com/extramuros)
+
+Équipe Agile SCRUM.
+
 ## Plan de livraison
 
 ### Fait lors du Hackathon du 28 février 2014
