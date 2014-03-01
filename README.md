@@ -2,7 +2,7 @@
 
 Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déroulant le 28 février 2014 par la TrashTeam
 
-- [Slides de la présentation du TRUC](https://docs.google.com/presentation/d/1ZJRNnDdomIa8d21q9zgd5B0WSo0M2fVteHkuviSbsBs/edit#slide=id.g1c9b60e26_20)
+- [Slides de la présentation du TRUC](https://docs.google.com/presentation/d/1ZJRNnDdomIa8d21q9zgd5B0WSo0M2fVteHkuviSbsBs/pub?start=false&loop=false&delayms=3000)
 - [Démonstration en ligne de la maquette TRUC](http://truc.extramuros.com:3000/)
 
 ## Plan de livraison
