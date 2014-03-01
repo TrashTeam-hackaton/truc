@@ -82,7 +82,7 @@ var displayMap = function(dechetteries) {
     var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib = 'Map data © OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {
-        minZoom: 8,
+        minZoom: 11,
         maxZoom: 32,
         attribution: osmAttrib
     });
