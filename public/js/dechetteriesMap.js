@@ -100,6 +100,7 @@ var displayMap = function(dechetteries) {
     drawMarkers(dechetteries, map);
     geolocate(map);
     drawUsers(map);
+    
 };
 
 $("#dechetteriesMap").ready(function() {
