@@ -22,7 +22,7 @@ Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déro
 ### Fait lors du Hackathon du 28 février 2014
 
 - Comment je me débarrasse de tel déchet ?
-    - Liste de déchets types avec déclinaisons ? papier, carton, bois, textile, gravas, végétaux, ...
+    - Liste de déchets types avec déclinaisons ? papier, carton, bois, textile, gravats, végétaux, ...
     - Catégorisation des déchets http://fr.wikipedia.org/wiki/Types_de_d%C3%A9chets ?
     - Catégorisation des lieux de collecte (compatibilité de la catégorie de mon déchet avec ce qu’accepte le point de collecte)
 - Où je m’en débarrasse ? => Localisation des déchetteries, des points de collecte (pour les DASRIA: http://www.lorsep.org/upload/news/docs/plaquette%20DASRI.pdf)
@@ -58,7 +58,7 @@ Nécessite opendata des partenaires du Grand Nancy actuellement non disponibles.
 
 #### Lot 5 (coût estimé : 1 sprint)
 
-- J’ai des observations à faire concernant un lieu de collecte, je veux pouvoir les faire partager aux autres usagers qui allaient se rendre au même point de dépôt. Ex: magasin acceptant les piles fermé exceptionnellement, déchetterie ayant une benne pour les gravats en rade ... 
+- J’ai des observations à faire concernant un lieu de collecte, je veux pouvoir les faire partager aux autres usagers qui allaient se rendre au même point de dépôt. Ex: magasin acceptant les piles fermé exceptionnellement, déchetterie ayant une benne pour les gravats en rade... 
 
 #### Lot 5 (coût estimé : 1 sprint)
 
