@@ -8,6 +8,9 @@
 
 var size = new OpenLayers.Size(30, 30);
 var offset = new OpenLayers.Pixel(-(size.w / 2), -size.h);
+var dechetMarkers = new L.LayerGroup();
+var usersMarkers = new L.LayerGroup();
+var map = L.map('dechetteriesMap');
 
 var createPosition = function(longitude, latitude) {
     return new OpenLayers.LonLat(longitude, latitude) // Centre de la carte
@@ -18,7 +21,7 @@ var createPosition = function(longitude, latitude) {
 }
 
 
-var geolocate = function(map) {
+var geolocate = function() {
     map.locate({
         setView: true
     }).on('locationerror', function() {
@@ -41,7 +44,8 @@ var getDechetterieDescription = function(dechetterie) {
     return description;
 }
 
-var drawMarkers = function(inputMarkers, map) {
+var drawMarkers = function(inputMarkers) {
+
     $.each(inputMarkers, function(index, dechetterie) {
         var dechetteriePosition = dechetterie.position;
         var latitude = dechetteriePosition.latitude;
@@ -50,7 +54,8 @@ var drawMarkers = function(inputMarkers, map) {
             title: "Déchetterie de " + dechetterie.ville,
             riseOnHover: true
         }
-        var marker = L.marker([latitude, longitude], markerConf).addTo(map);
+        var marker = L.marker([latitude, longitude], markerConf);
+        dechetMarkers.addLayer(marker);
         marker.on('click', function(e) {
             var popup = L.popup()
                 .setLatLng(e.latlng) //(assuming e.latlng returns the coordinates of the event)
@@ -58,23 +63,27 @@ var drawMarkers = function(inputMarkers, map) {
                 .openOn(map);
         });
     });
+    dechetMarkers.addTo(map);
 }
 
-var drawUsers = function(map) {
+var drawUsers = function() {
     $.get("/users", function(data) {
         for (var i = data.length - 1; i >= 0; i--) {
             var user = data[i];
             var userCoords = user.profile.location.split(',');
+            var userGravatar = user.profile.picture === "" ? "/img/male-user-orange.png" : user.profile.picture;
 
             var userIcon = L.icon({
-                iconUrl: "/img/male-user-orange.png"
+                iconUrl: userGravatar
             });
             var markerConf = {
                 icon: userIcon,
                 title: user.profile.name
             }
-            var marker = L.marker([userCoords[1], userCoords[0]], markerConf).addTo(map);
+            var marker = L.marker([userCoords[0], userCoords[1]], markerConf);
+            usersMarkers.addLayer(marker);
         };
+        usersMarkers.addTo(map);
     });
 }
 var displayMap = function(dechetteries) {
@@ -86,9 +95,7 @@ var displayMap = function(dechetteries) {
         maxZoom: 32,
         attribution: osmAttrib
     });
-
-    var map = L.map('dechetteriesMap');
-    map.setView(new L.LatLng(48.6833, 6.2), 11);
+    map.setView(new L.LatLng(48.6833, 6.2), 12);
     map.addLayer(osm);
     drawMarkers(dechetteries, map);
     geolocate(map);
