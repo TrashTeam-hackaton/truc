@@ -7,6 +7,8 @@ Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déro
 
 ## TrashTeam
 
+Équipe Agile SCRUM.
+
 - [Pierre-Yves Arnould](https://github.com/bricoman)
 - [Guillaume Billey](https://github.com/guilbill)
 - [Stéphane Gully](https://github.com/kerphi)
@@ -14,7 +16,6 @@ Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déro
 - [William Paul](https://github.com/laryakan)
 - [Stanislas Perrin](https://github.com/extramuros)
 
-Équipe Agile SCRUM.
 
 ## Plan de livraison
 
