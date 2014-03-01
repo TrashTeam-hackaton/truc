@@ -1,5 +1,6 @@
+var mongo_uri = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/test';
 module.exports = {
-  db: 'mongodb://heroku_app22642245:mhns3qit4dtqemrsnujvjmjk7h@ds029979.mongolab.com:29979/heroku_app22642245',
+  db: mongo_uri,
 
   sessionSecret: "Your Session Secret goes here",
 
