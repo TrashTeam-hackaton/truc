@@ -21,7 +21,7 @@ var createPosition = function(longitude, latitude) {
 var geolocate = function(map) {
     map.locate({
         setView: true
-    }).on('locationfound', function() {
+    }).on('locationerror', function() {
         // Si la geolocasition n'a pas marchée
         map.setView(new L.LatLng(48.6833, 6.2), 12);
     });
@@ -84,7 +84,7 @@ var displayMap = function(dechetteries) {
     var osmAttrib = 'Map data © OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {
         minZoom: 8,
-        maxZoom: 12,
+        maxZoom: 32,
         attribution: osmAttrib
     });
 
