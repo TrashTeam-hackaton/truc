@@ -5,7 +5,7 @@ extends layout
 block content
   div.dechets
     h1 Quel déchet souhaitez-vous jeter ?
-    select#type
+    select#type.form-control
       for cat in cats
         option(value=cat.id) #{cat.nom}
   
