@@ -30,7 +30,6 @@ Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déro
     - Catégorisation des déchets http://fr.wikipedia.org/wiki/Types_de_d%C3%A9chets ?
     - Catégorisation des lieux de collecte (compatibilité de la catégorie de mon déchet avec ce qu’accepte le point de collecte)
 - Où je m’en débarrasse ? => Localisation des déchetteries, des points de collecte (pour les DASRIA: http://www.lorsep.org/upload/news/docs/plaquette%20DASRI.pdf)
-- Quand je m'en débarrasse ? Croiser avec l'opendata météo ? http://www.data.gouv.fr/fr/dataset/modele-meteo-europe
 
 
 ### Feuille de route (reste à faire)
@@ -47,7 +46,8 @@ Unité utilisée pour l'estimation du chiffrage : sprint = 15j (équipe TrashTea
 
 Nécessite opendata du Grand Nancy actuellement non disponibles.
 
-- Y a-t-il du monde à la déchetterie (récupération des données provenant de l’utilisation des badges à l’entrée des déchetteries) ?
+- Y a-t-il du monde à la déchetterie (récupération des données provenant de l’utilisation des badges à l’entrée des déchetteries) ? Croiser avec l'[opendata météo sur data.gouv.fr](http://www.data.gouv.fr/fr/dataset/modele-meteo-europe) ? 
+
 
 #### Lot 3 (coût estimé : 2 sprints)
 
