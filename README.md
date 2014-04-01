@@ -1,6 +1,6 @@
 # TRi Urbain Collaboratif (TRUC) 
 
-Dépôt du projet TRUC, réalisé lors du Mini Hackathon du Grand Nancy se déroulant le 28 février 2014 par la TrashTeam
+Dépôt du projet TRUC, réalisé lors du [Mini Hackathon du Grand Nancy se déroulant le 28 février 2014](https://www.eventbrite.fr/e/billets-mini-hackathon-10644527067?ref=estw) par la TrashTeam
 
 - [Présentation du produit réalisé : TrUC](https://docs.google.com/presentation/d/1ZJRNnDdomIa8d21q9zgd5B0WSo0M2fVteHkuviSbsBs/pub?start=false&loop=false&delayms=3000)
 - [Présentation de la méthodologie agile utilisée pendant le hackathon](https://docs.google.com/presentation/d/1uWoEVFgl_gB8ZR14vpLbKFbsPU5rxWCBsjIyx055Cz0/pub?start=false&loop=false&delayms=3000)
